@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+/* ---- Color tokens ---- */
+:root {
+  --ink: #152438;
+  --ink-2: #253953;
+  --sage: #AFB55E;
+  --mint: #E7F0EC;
+  --line: #C7CCCD;
+  --paper: #FAFAF8;
+--ink-section: #1F3147;
+  --accent: #B78FA8;
+  --accent-2: #8E6AA6;
+}
+
+/* ---- Global page background ---- */
+html {
+  min-height: 100%;
+  background: var(--paper);
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+  color: var(--ink);
+
+  background:
+    radial-gradient(900px 500px at 12% 8%, rgba(183, 143, 168, 0.20), transparent 60%),
+    radial-gradient(900px 500px at 88% 18%, rgba(175, 181, 94, 0.18), transparent 62%),
+    radial-gradient(700px 420px at 70% 88%, rgba(173, 201, 186, 0.20), transparent 55%),
+    var(--paper);
+}
+
+/* ---- Grain layer (browser-proof) ---- */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.07; /* adjust 0.05–0.09 */
+
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(0,0,0,0.035) 0px,
+      rgba(0,0,0,0.035) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0,0,0,0.025) 0px,
+      rgba(0,0,0,0.025) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+
+  filter: blur(0.6px);
+}
+
+/* Keep all page content above the grain */
+body > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ---- Hero highlight (bulletproof version) ---- */
+.highlight-swipe {
+  padding: 0 0.15em;
+  border-radius: 0.35em;
+  background: linear-gradient(
+    to top,
+    rgba(175, 181, 94, 0.55) 0%,
+    rgba(175, 181, 94, 0.55) 58%,
+    transparent 58%,
+    transparent 100%
+  );
+}
+/* app/globals.css */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Default: visible (no surprises) */
+.reveal-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animate only when motion is allowed */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-up {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeUp 700ms cubic-bezier(.2,.8,.2,1) forwards;
+  }
+}
+
+/* Reduced motion: no animation, but still visible */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up {
+    animation: none;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ---- Cards ---- */
+.card {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1.5rem; /* rounded-3xl feel */
+  box-shadow:
+    0 10px 30px rgba(21, 36, 56, 0.08),
+    0 2px 10px rgba(21, 36, 56, 0.05);
+}
+
+.card-hover {
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+  will-change: transform;
+  transform: translateZ(0); /* smoother hover on Safari/Chrome */
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow:
+    0 16px 40px rgba(21, 36, 56, 0.12),
+    0 6px 18px rgba(21, 36, 56, 0.08);
+}
+
+/* ---- Accessible focus ring (token-friendly) ---- */
+.focus-ring:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 3px rgba(183, 143, 168, 0.45),
+    0 10px 30px rgba(21, 36, 56, 0.10);
+}
+/* ---- Reveal stagger helpers ---- */
+.reveal-delay-1 { animation-delay: 90ms; }
+.reveal-delay-2 { animation-delay: 180ms; }
+.reveal-delay-3 { animation-delay: 270ms; }
