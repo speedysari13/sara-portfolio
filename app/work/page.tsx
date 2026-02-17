@@ -48,6 +48,34 @@ export default function WorkPage() {
 
         </div>
 
+        {/* AI Enablement / tutorials */}
+<div className="card p-8 card-hover">
+  <div className="flex items-center justify-between gap-4">
+    <h2 className="font-serif text-2xl text-[color:var(--ink)]">
+      AI enablement: public tutorials + tips
+    </h2>
+    <span className="rounded-full bg-[color:var(--mint)] px-3 py-1 text-xs text-[color:var(--ink-2)]">
+      New
+    </span>
+  </div>
+
+  <p className="mt-2 text-sm text-slate-600">
+    AI enablement · Practical workflows · Creator-to-teams translation
+  </p>
+
+  <p className="mt-4 text-slate-700">
+    Short, real-world AI tips designed for busy professionals—focused on prompt patterns,
+    decision support, and making AI more useful, less scary.
+  </p>
+
+  <a
+    href="/ai-enablement"
+    className="mt-4 inline-block text-[color:var(--accent)] hover:underline"
+  >
+    View tutorials →
+  </a>
+</div>
+
         {/* Coming soon: Recruiter bot */}
        <div className="card p-8 bg-[color:var(--paper)]/70">
           <div className="flex items-center justify-between gap-4">
