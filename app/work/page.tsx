@@ -48,6 +48,30 @@ export default function WorkPage() {
 
         </div>
 
+        {/* IVR Flow Design */}
+        <div className="card card-hover p-8">
+          <h2 className="font-serif text-2xl tracking-tight text-[color:var(--ink)]">
+            Designing for recovery: IVR intent routing and fallback flows
+          </h2>
+
+          <p className="mt-2 text-sm text-slate-600">
+            Conversation design · IVR flows · Technical documentation
+          </p>
+
+          <p className="mt-4 text-slate-700">
+            Two annotated sample flows demonstrating NLU-based intent routing, confidence
+            thresholds, graceful fallback handling, and escalation logic for a healthcare
+            member support IVR.
+          </p>
+
+          
+            <a href="/work/ivr-flow-design"
+            className="focus-ring mt-5 inline-flex items-center gap-2 text-sm font-medium text-[color:var(--accent)] underline decoration-transparent underline-offset-4 transition hover:decoration-[color:var(--accent)]"
+          >
+            View flow diagrams <span className="opacity-70">→</span>
+          </a>
+        </div>
+
         {/* AI Enablement / tutorials */}
 <div className="card p-8 card-hover">
   <div className="flex items-center justify-between gap-4">

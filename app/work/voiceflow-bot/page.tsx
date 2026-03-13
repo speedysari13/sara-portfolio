@@ -1,6 +1,10 @@
+"use client";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import SiteHeader from "@/components/SiteHeader";
 import VoiceflowWidget from "@/components/VoiceflowWidget";
 export default function VoiceflowCaseStudy() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-20">
@@ -196,38 +200,25 @@ export default function VoiceflowCaseStudy() {
         </div>
       </section>
 
-      {/* Screenshots */}
+      {/* Flow diagram */}
       <section id="screens" className="mt-14 reveal-up">
-        <h2 className="font-serif text-2xl tracking-tight text-[color:var(--ink)]">Screenshots</h2>
+        <h2 className="font-serif text-2xl tracking-tight text-[color:var(--ink)]">Conversation flow</h2>
 
         <p className="mt-4 text-slate-700">
-          Coming soon. This will include a quick look at the flow, plus example outputs.
+          The diagram below documents the full conversation flow, including timeout handling,
+          platform validation, fallback logic, a confirmation step, and edit routing —
+          designed to guide users through a structured content planning session.
         </p>
 
-                <div className="mt-6 grid gap-4 sm:grid-cols-2">
-          <div className="card p-6">
-            <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
-              Screenshot
-            </p>
-            <p className="mt-2 text-sm text-slate-700">
-              Flow overview (placeholder)
-            </p>
-            <div className="mt-4 rounded-2xl border border-dashed border-[color:var(--line)] bg-white/60 p-10 text-center text-sm text-slate-500">
-              Add image here
-            </div>
-          </div>
-
-          <div className="card p-6">
-            <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
-              Screenshot
-            </p>
-            <p className="mt-2 text-sm text-slate-700">
-              Example evaluation output (placeholder)
-            </p>
-            <div className="mt-4 rounded-2xl border border-dashed border-[color:var(--line)] bg-white/60 p-10 text-center text-sm text-slate-500">
-              Add image here
-            </div>
-          </div>
+        <div className="mt-6 card p-4">
+          <a href="/ai-content-editor-flow.pdf" target="_blank" rel="noopener noreferrer" className="w-full block">
+            <img
+              src="/ai-content-editor-flow.png"
+              alt="AI Content Editor conversation flow diagram"
+              className="w-full max-w-sm mx-auto rounded-xl border border-[color:var(--line)] cursor-zoom-in hover:opacity-90 transition"
+            />
+            <p className="mt-2 text-center text-xs text-slate-500">Click to view full size</p>
+          </a>
         </div>
       </section>
 
