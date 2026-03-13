@@ -222,18 +222,67 @@ export default function VoiceflowCaseStudy() {
         </div>
       </section>
 
+{/* Behind the scenes */}
+      <section className="mt-14 reveal-up">
+        <h2 className="font-serif text-2xl tracking-tight text-[color:var(--ink)]">Behind the scenes</h2>
+
+        <p className="mt-4 text-slate-700">
+          The Voiceflow canvas combines structured conversation logic with LLM-powered evaluation — 
+          and knowing where to use each was the core design challenge.
+        </p>
+
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <div className="card p-6">
+            <h3 className="font-medium text-[color:var(--ink)]">Structured logic (designed by me)</h3>
+            <p className="mt-2 text-sm leading-relaxed text-slate-700">
+              The intake flow — questions, capture blocks, platform validation, timeout handling, 
+              retry loops, and the confirmation step — is all hand-built logic. I used a JavaScript 
+              array to validate platform inputs rather than relying on the LLM to interpret them, 
+              which keeps that part of the flow predictable and testable.
+            </p>
+          </div>
+
+          <div className="card p-6">
+            <h3 className="font-medium text-[color:var(--ink)]">LLM behavior (prompt-governed)</h3>
+            <p className="mt-2 text-sm leading-relaxed text-slate-700">
+              The actual idea evaluation and ranking at the end of the flow is LLM-powered, 
+              governed by a structured prompt that uses the captured variables as context — 
+              goal, platform, audience, and tone all feed directly into the evaluation.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-6 card p-4">
+          <p className="text-xs uppercase tracking-[0.18em] text-slate-500 mb-3">Voiceflow canvas</p>
+          <a href="/voiceflow-canvas.png" target="_blank" rel="noopener noreferrer" className="w-full block">
+            <img
+              src="/voiceflow-canvas.png"
+              alt="Voiceflow canvas showing structured logic nodes and live bot preview"
+              className="w-full max-w-sm mx-auto rounded-xl border border-[color:var(--line)] cursor-zoom-in hover:opacity-90 transition"
+            />
+            <p className="mt-2 text-center text-xs text-slate-500">Click to view full size</p>
+          </a>
+        </div>
+      </section>
+
       {/* Learnings */}
       <section className="mt-14 reveal-up">
         <h2 className="font-serif text-2xl tracking-tight text-[color:var(--ink)]">What I learned</h2>
 
         <p className="mt-4 text-slate-700">
-          This project taught me to think about AI and creativity differently. Creative teams aren’t short on ideas—
-          they’re short on time, clarity, and decision support.
+          This project taught me to think about AI and creativity differently. Creative teams aren't short on ideas — they're short on time, clarity, and decision support. But that was just the beginning.
         </p>
 
         <p className="mt-4 text-slate-700">
-          Instead of replacing creative work, AI can reduce the logistical overhead: ingest messy inputs, surface patterns,
-          and help teams compare options faster—so humans can stay focused on the creative parts they actually enjoy.
+          Building the conversation flow forced me to think beyond the happy path. Designing for timeouts, retries, fallback prompts, and graceful defaults taught me that good conversation design is mostly about what happens when things go wrong. The moments where a user hesitates, misunderstands, or gives unexpected input — those are where the real design work lives.
+        </p>
+
+        <p className="mt-4 text-slate-700">
+          I also learned the importance of knowing when not to use an LLM. The intake flow — validation logic, retry loops, confirmation steps — is all structured, hand-built logic. Keeping that predictable and testable made the LLM-powered evaluation at the end more trustworthy, not less. The two approaches work better together when you're deliberate about the boundary between them.
+        </p>
+
+         <p className="mt-4 text-slate-700">
+          Most importantly: I learned by doing. Voiceflow, Lucidchart, flow documentation, technical annotation — none of this was in my toolkit six months ago. This project is proof that the right problem will teach you what you need to know.
         </p>
       </section>
 
