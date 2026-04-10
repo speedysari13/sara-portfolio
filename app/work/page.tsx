@@ -151,15 +151,15 @@ export default function WorkPage() {
 
          <div className="card card-hover p-8 mt-4">
           <h3 className="font-serif text-2xl text-[color:var(--ink)]">
-            Hogan Assessments safety report
+            Hogan Assessments safety e-book
           </h3>
 
           <p className="mt-2 text-sm text-slate-600">
-            Print & digital report · Copywriting · Thought leadership
+            Print & digital e-book · Copywriting · Thought leadership
           </p>
 
           <p className="mt-4 text-slate-700">
-            A research-driven ebook that translates complex safety and personality data into a clear, compelling story—connecting human behavior to real-world risk, outcomes, and ROI.
+            A research-driven ebook promoting a report that translates complex safety and personality data into a clear, compelling story—connecting human behavior to real-world risk, outcomes, and ROI.
           </p>
 
           <a

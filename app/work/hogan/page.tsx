@@ -6,15 +6,15 @@ export default function EbookPage() {
       <SiteHeader />
 
       <h1 className="font-serif text-4xl text-[color:var(--ink)]">
-        Hogan Assessments safety report
+        Hogan Assessments safety e-book
       </h1>
 
       <p className="mt-2 text-sm text-slate-600">
-        Print & digital report · Copyriting · Thought leadership
+        Print & digital e-book · Copyriting · Thought leadership
       </p>
 
       <p className="mt-6 text-slate-700 leading-relaxed">
-        A research-driven ebook that translates complex safety and personality data into a clear, compelling story—connecting human behavior to real-world risk, outcomes, and ROI.
+        A research-driven ebook promoting a report that translates complex safety and personality data into a clear, compelling story—connecting human behavior to real-world risk, outcomes, and ROI.
       </p>
 
       <div className="mt-8">
