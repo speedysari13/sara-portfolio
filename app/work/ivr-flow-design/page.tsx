@@ -18,7 +18,7 @@ export default function IVRFlowDesign() {
         </p>
 
         <h1 className="mt-3 font-serif text-4xl leading-tight text-[color:var(--ink)]">
-          Designing for recovery: IVR intent routing and fallback flows
+          IVR intent routing and fallback flows
         </h1>
 
         <p className="mt-5 text-lg text-slate-700">

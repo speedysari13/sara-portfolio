@@ -6,11 +6,11 @@ export default function CoversPage() {
       <SiteHeader />
 
       <h1 className="font-serif text-4xl text-[color:var(--ink)]">
-        Dental Economics & RDH Magazine Covers
+        Dental Economics & RDH magazine covers
       </h1>
 
       <p className="mt-2 text-sm text-slate-600">
-        Magazine cover headlines and creative direction
+        Copywriting · Brand stewardship · Creative direction
       </p>
 
       <p className="mt-6 max-w-2xl text-slate-700 leading-relaxed">

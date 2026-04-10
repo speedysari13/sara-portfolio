@@ -32,7 +32,7 @@ export default function WorkPage() {
 
         <div className="card card-hover p-8">
           <h2 className="font-serif text-2xl tracking-tight text-[color:var(--ink)]">
-            Helping small content teams decide what to post next with a Voiceflow AI assistant
+            The Content Decider Voiceflow chatbot
           </h2>
 
           <p className="mt-2 text-sm text-slate-600">
@@ -55,7 +55,7 @@ export default function WorkPage() {
 
         <div className="card card-hover p-8">
           <h2 className="font-serif text-2xl tracking-tight text-[color:var(--ink)]">
-            Designing for recovery: IVR intent routing and fallback flows
+            IVR intent routing and fallback flows
           </h2>
 
           <p className="mt-2 text-sm text-slate-600">
@@ -88,7 +88,7 @@ export default function WorkPage() {
 
         <div className="card card-hover p-8 mt-6">
           <h3 className="font-serif text-2xl text-[color:var(--ink)]">
-            The Bottom Line Newsletter
+            The Bottom Line newsletter
           </h3>
 
           <p className="mt-2 text-sm text-slate-600">
@@ -109,11 +109,11 @@ export default function WorkPage() {
 
         <div className="card card-hover p-8 mt-4">
           <h3 className="font-serif text-2xl text-[color:var(--ink)]">
-            DentistryIQ Ergonomics E-book
+            DentistryIQ ergonomics e-book
           </h3>
 
           <p className="mt-2 text-sm text-slate-600">
-            Gated editorial e-book · Editorial direction · Writing · Production leadership
+            Gated editorial e-book · Editorial direction · Copywriting · Production leadership
           </p>
 
           <p className="mt-4 text-slate-700">
@@ -130,7 +130,7 @@ export default function WorkPage() {
 
         <div className="card card-hover p-8 mt-4">
           <h3 className="font-serif text-2xl text-[color:var(--ink)]">
-            Hogan Assessments Corporate Brochure
+            Hogan Assessments corporate brochure
           </h3>
 
           <p className="mt-2 text-sm text-slate-600">
@@ -149,9 +149,30 @@ export default function WorkPage() {
           </a>
         </div>
 
+         <div className="card card-hover p-8 mt-4">
+          <h3 className="font-serif text-2xl text-[color:var(--ink)]">
+            Hogan Assessments safety report
+          </h3>
+
+          <p className="mt-2 text-sm text-slate-600">
+            Print & digital report · Copywriting · Thought leadership
+          </p>
+
+          <p className="mt-4 text-slate-700">
+            A research-driven ebook that translates complex safety and personality data into a clear, compelling story—connecting human behavior to real-world risk, outcomes, and ROI.
+          </p>
+
+          <a
+            href="/work/hogan"
+            className="mt-5 inline-block text-[color:var(--accent)] hover:underline"
+          >
+            View sample →
+          </a>
+        </div>
+
         <div className="card card-hover p-8 mt-4">
           <h3 className="font-serif text-2xl text-[color:var(--ink)]">
-            Dental Economics & RDH Magazine Covers
+            Dental Economics & RDH magazine covers
           </h3>
 
           <p className="mt-2 text-sm text-slate-600">
@@ -215,9 +236,7 @@ export default function WorkPage() {
             <h2 className="font-serif text-2xl text-[color:var(--ink)]">
               AI enablement: Public tutorials + tips
             </h2>
-            <span className="rounded-full bg-[color:var(--mint)] px-3 py-1 text-xs text-[color:var(--ink-2)]">
-              New
-            </span>
+
           </div>
 
           <p className="mt-2 text-sm text-slate-600">

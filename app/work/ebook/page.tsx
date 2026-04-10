@@ -6,11 +6,11 @@ export default function EbookPage() {
       <SiteHeader />
 
       <h1 className="font-serif text-4xl text-[color:var(--ink)]">
-        DentistryIQ Ergonomics E-book
+        DentistryIQ ergonomics e-book
       </h1>
 
       <p className="mt-2 text-sm text-slate-600">
-        Gated editorial e-book · Editorial direction, writing, and production leadership
+        Gated editorial e-book · Editorial direction · Copywriting · Production leadership
       </p>
 
       <p className="mt-6 text-slate-700 leading-relaxed">

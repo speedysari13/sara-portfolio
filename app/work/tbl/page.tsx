@@ -6,11 +6,11 @@ export default function TBLPage() {
       <SiteHeader />
 
       <h1 className="font-serif text-4xl text-[color:var(--ink)]">
-        The Bottom Line Newsletter
+        The Bottom Line newsletter
       </h1>
 
       <p className="mt-2 text-sm text-slate-600">
-        Newsletter · Content strategy, editorial judgment, positioning
+        Newsletter · Content strategy · Editorial judgment
       </p>
 
       <p className="mt-6 text-slate-700 leading-relaxed">
