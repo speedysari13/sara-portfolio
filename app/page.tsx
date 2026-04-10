@@ -9,9 +9,6 @@ export default function HomePage() {
 
       <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-center">
         <div className="reveal-up">
-          <p className="text-sm tracking-wide text-slate-600">
-            Tulsa, OK • Remote
-          </p>
 
           <h1 className="mt-2 font-serif text-5xl leading-[1.06] tracking-tight text-[color:var(--ink)]">
             I bring order to chaos—{" "}
@@ -107,7 +104,7 @@ export default function HomePage() {
               Case study
             </p>
             <h3 className="mt-2 text-lg font-semibold tracking-tight text-[color:var(--ink)]">
-              Voiceflow bot: AI Content Editor
+              Voiceflow bot: The Content Decider
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-slate-700">
               A conversational flow that turns messy drafts into clean, usable copy
