@@ -15,7 +15,7 @@ function WorkThumb({
         src={src}
         alt={alt}
         fill
-        className="object-cover transition duration-300 group-hover:scale-[1.02]"
+        className="object-cover transition duration-300 group-hover:scale-[1.03]"
       />
     </div>
   );
@@ -28,7 +28,7 @@ export default function WorkPage() {
         <SiteHeader active="work" />
       </div>
 
-      <div className="bg-[#d8c7cf]">
+      <div className="bg-[#d8c7cf] border-b border-slate-200/60">
         <header className="mx-auto max-w-5xl px-6 py-16">
 
           <h1 className="mt-0 font-serif text-5xl leading-[1.06] tracking-tight text-[color:var(--ink)]">
@@ -43,14 +43,14 @@ export default function WorkPage() {
             reflect my role in shaping, directing, and improving the final result.
           </p>
 
-          <div className="bg-[#d8c7cf] border-b border-slate-200/60"></div>
         </header>
       </div>
 
       <main className="mx-auto max-w-5xl px-6 py-16">
                 {/* Conversation Design */}
-        <div className="mt-0">
-          <h2 className="font-serif text-3xl text-[color:var(--ink)]">
+        <div className="mt-12">
+  <div className="mb-4 h-1 w-14 rounded-full bg-[color:var(--accent)] opacity-80" />
+  <h2 className="font-serif text-3xl text-[color:var(--ink)]">
             Conversation Design & Systems Thinking
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-slate-600">
@@ -139,7 +139,8 @@ export default function WorkPage() {
 
         {/* Editorial & Content Strategy */}
         <div className="mt-12">
-          <h2 className="font-serif text-3xl text-[color:var(--ink)]">
+  <div className="mb-4 h-1 w-14 rounded-full bg-[color:var(--accent)] opacity-80" />
+  <h2 className="font-serif text-3xl text-[color:var(--ink)]">
             Editorial & Content Strategy
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-slate-600">
@@ -339,7 +340,8 @@ export default function WorkPage() {
 
         {/* Video & Creative */}
         <div className="mt-12">
-          <h2 className="font-serif text-3xl text-[color:var(--ink)]">
+  <div className="mb-4 h-1 w-14 rounded-full bg-[color:var(--accent)] opacity-80" />
+  <h2 className="font-serif text-3xl text-[color:var(--ink)]">
             Video & Creative Strategy
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-slate-600">
@@ -403,6 +405,7 @@ export default function WorkPage() {
 
         {/* AI Enablement / tutorials */}
 <div className="mt-12">
+  <div className="mb-4 h-1 w-14 rounded-full bg-[color:var(--accent)] opacity-80" />
   <h2 className="font-serif text-3xl text-[color:var(--ink)]">
     AI enablement: Public tutorials + tips
   </h2>

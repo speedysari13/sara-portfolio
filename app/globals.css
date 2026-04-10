@@ -121,17 +121,22 @@ body > * {
 }
 
 .card-hover {
-  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease;
   will-change: transform;
-  transform: translateZ(0); /* smoother hover on Safari/Chrome */
+  transform: translateZ(0);
 }
 
 .card-hover:hover {
-  transform: translateY(-4px);
-  background: rgba(255, 255, 255, 0.82);
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(148, 163, 184, 0.35); /* subtle sharpen */
   box-shadow:
-    0 16px 40px rgba(21, 36, 56, 0.12),
-    0 6px 18px rgba(21, 36, 56, 0.08);
+    0 22px 50px rgba(21, 36, 56, 0.14),
+    0 8px 22px rgba(21, 36, 56, 0.10);
 }
 
 /* ---- Accessible focus ring (token-friendly) ---- */
